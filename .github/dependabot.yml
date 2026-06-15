@@ -3,7 +3,12 @@ updates:
  
   - package-ecosystem: "github-actions"
     target-branch: "main"
-    directory: "../"
+    directories: 
+      - "/build-action"
+      - "/hatch-conda"
+      - "/hatch-lint"
+      - "/permission_check"
+      - "/setup-hatch"
     schedule:
       interval: "weekly"
       day: "monday"
